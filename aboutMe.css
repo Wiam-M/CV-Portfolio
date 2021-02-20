@@ -1,9 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 /*le * prend en compt tous le HTML*/
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Avenir, sans-serif;
-    background-color: rgb(22, 21, 21);
+    color: blanchedalmond;
+    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: rgb(36, 35, 35);
+}
+nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    position: fixed;
+    top: 0px;
 }
 nav li{
     float: left;
@@ -23,4 +33,34 @@ nav a{
 nav a:hover{
     color: rgb(116, 110, 100);
     border-bottom: 2px solid blanchedalmond;
+}
+section{
+    margin: 10% auto;
+    width: 70%;
+}
+article{
+    border: 1px solid blanchedalmond;
+    background-color: rgb(36, 35, 35);
+}
+.titreUn{
+    color: blanchedalmond;
+    font-size: 1.4em;
+    padding: 3%;
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid blanchedalmond;
+    background-color: black;
+}
+p{
+ margin: 10px;
+ text-align: center; 
+line-height: 2em;
+}
+.infos{
+    display: flex;
+    justify-content: space-around;
+    line-height: 3em;
+}
+.infos a{
+    text-decoration: none;
 }
