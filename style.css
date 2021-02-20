@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+    width: 100%; 
+    border: 1px solid blanchedalmond;
+    background-color: rgb(19, 18, 18);
+    color: blanchedalmond;
+    
+}
+div{
+    float: left;
+    font-size: 1.1em;
+    font-weight: 400;
+   font-family: 'Lato', sans-serif;
+   text-transform: uppercase;
+   text-decoration: none;  
+}
+h2{
+    text-align: center;
+    position: relative;
+    top: 30%;
+}
+
+#picture{
+    width: 33.3%;
+    height: 590px;
+    border: 1px solid blanchedalmond;
+    margin: 2%;
+}
+#WM{
+    border: 1px solid blanchedalmond;
+width: 28%;
+height: 235px;
+margin: 7% 1% 0%;
+text-align: center;
+padding: 5% auto;
+}
+#about_me{
+    width: 28%;
+    height: 235px;
+    border: 1px solid blanchedalmond;
+   margin: 7% 1% 0%;
+}
+h3{
+    position: relative;
+    top: 25%;
+}
+#Mpf{
+    width: 28%;
+    height: 235px;
+    border: 1px solid blanchedalmond;
+   margin: 2% 1%;;
+ 
+}
+#contact{
+    width: 28%;
+    height: 235px;
+    border: 1px solid blanchedalmond;
+   margin: 2% 1%;
+
+}
