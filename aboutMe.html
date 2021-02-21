@@ -11,15 +11,15 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#">infos personnelles</a></li>
-                <li><a href="#">experiences</a></li>
-                <li><a href="#">diplomes & formation</a></li>
-                <li><a href="#">competences</a></li>
+                <li onclick="infoPersoClick()"><a href="#">infos personnelles</a></li>
+                <li onclick="experienceClick()"><a href="#">experiences</a></li>
+                <li onclick="formationClick()"><a href="#">diplomes & formation</a></li>
+                <li onclick="competenceClick()"><a href="#">competences</a></li>
             </ul>
         </nav>
     </header>
     <section>
-        <article>
+        <article id="infoPersoContenu">
             <h1 class="titreUn">Informations Personnelles</h1>
             <p>Diplômée d'un master 2 "Matériaux et Structure pour l'aéronautique et le spatial" à l'univeristé Paul
                 Sabatier, Toulouse. Je me suis réorienté ensuite vers le développement informatique et particuliérement
@@ -42,7 +42,7 @@
                 </ul>
             </div>
         </article>
-        <article class="experiences">
+        <article id="experienceContenu" class="disparaitre">
             <h1 class="titreUn">éxperiences</h1>
             <div class="experience">
                 <ul>
@@ -78,7 +78,8 @@
                 </ul>
             </div>
         </article>
-        <article>
+        <!--class ="disparaitre" permet de disparaitre les elements et laisser apparaitre juste infos persosonnelles-->
+        <article id="formationContenu" class="disparaitre">
             <h1 class="titreUn">diplômes & formations</h1>
             <div class="experience"> 
                 <ul>
@@ -105,7 +106,7 @@
 
             </div>
         </article>
-        <article>
+        <article id="competenceContenu" class="disparaitre">
                 <h1 class="titreUn">compétences</h1>
             <div class="outils">
                 <ul>
@@ -124,5 +125,47 @@
         </article>
     </section>
 </body>
-
+<script>
+    function experienceClick() {
+        var infoPersoContenu = document.getElementById("infoPersoContenu");
+        infoPersoContenu.style.display = "none";
+        var experienceContenu = document.getElementById("experienceContenu")
+        experienceContenu.style.display = "block"
+        var competenceContenu = document.getElementById("competenceContenu")
+        competenceContenu.style.display = "none"; 
+        var formationContenu = document.getElementById("formationContenu")
+        formationContenu.style.display = "none";
+    }
+    function infoPersoClick(){
+        var infoPersoContenu = document.getElementById("infoPersoContenu");
+        infoPersoContenu.style.display = "block";
+        var experienceContenu = document.getElementById("experienceContenu")
+        experienceContenu.style.display = "none" 
+        var competenceContenu = document.getElementById("competenceContenu")
+        competenceContenu.style.display = "none"; 
+        var formationContenu = document.getElementById("formationContenu")
+        formationContenu.style.display = "none";
+    }
+    function formationClick(){
+        var infoPersoContenu = document.getElementById("infoPersoContenu");
+        infoPersoContenu.style.display = "none";
+        var experienceContenu = document.getElementById("experienceContenu")
+        experienceContenu.style.display = "none"; 
+        var competenceContenu = document.getElementById("competenceContenu")
+        competenceContenu.style.display = "none"; 
+        var formationContenu = document.getElementById("formationContenu")
+        formationContenu.style.display = "block";
+    }
+    function competenceClick(){
+        var infoPersoContenu = document.getElementById("infoPersoContenu");
+        infoPersoContenu.style.display = "none";
+        var experienceContenu = document.getElementById("experienceContenu")
+        experienceContenu.style.display = "none" 
+        var competenceContenu = document.getElementById("competenceContenu")
+        competenceContenu.style.display = "block"; 
+        var formationContenu = document.getElementById("formationContenu")
+        formationContenu.style.display = "none";
+    }
+    
+</script>
 </html>
